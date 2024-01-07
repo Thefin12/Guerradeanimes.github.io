@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  }
+
+nav {
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+nav .mobile {
+  display: none;
+}
+
+nav .mobile .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+}
+
+nav .mobile .header .more button {
+  border: none;
+  background-color: red;
+  padding: 15px;
+  cursor: pointer;
+
+}
+
+nav .logo {
+  min-width: 250px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 20px 25px;
+}
+
+nav a:hover {
+  color: black;
+  background-color: #00c3ff;
+
+}
+
+nav .desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+nav .desktop .primary {
+display: flex;
+}
+
+nav .desktop .secondary{
+  display: flex;
+}
+
+nav .desktop .secondary.mini {
+  display: none;
+}
+
+@media screen and (max-width: 928px) {
+  nav .logo{
+    min-width: 100px;
+  }
+
+  nav .secondary.full {
+    display: none;
+  }
+
+  nav .secondary.mini {
+    display: block !important;
+  }
+
+  nav .secondary.mini .submenu {
+    width: 150px;
+    background-color: black;
+    position: absolute;
+    display: none;
+  }
+
+  nav .secondary.mini:hover .submenu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  nav .desktop {
+    display: none;
+  }
+
+  nav .mobile {
+    display: block;
+  }
+}
+
+.seccion-1 {
+  background-color: #B1C2C3;
+  padding: 50px;
+}
+
+.seccion-2 {
+  background-color: #ABF4FA;
+  padding: 50px;
+}
+
+.seccion-3 {
+  background-color: #B1C2C3;
+  padding: 50px;
+}
